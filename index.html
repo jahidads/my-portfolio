@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
-  <link rel="icon" type="image/png" href="https://scontent.fdac174-1.fna.fbcdn.net/v/t39.30808-1/495563656_122107947614855440_1152109947886773901_n.jpg?stp=c0.0.1542.1542a_dst-jpg_s200x200_tt6&_nc_cat=106&ccb=1-7&_nc_sid=1d2534&_nc_ohc=WtWtybPZakUQ7kNvwGBnJoZ&_nc_oc=AdlIYeEtPzhfNeagdQjQeiykN-bRY8OiAt8oP4KbCXgyHTab1huDU2X-ac7ELrwNggY&_nc_zt=24&_nc_ht=scontent.fdac174-1.fna&_nc_gid=MatXf4CwforrLEfbKSYHeA&oh=00_AfKV_D7Y6E1Q6L1ikt0kP09aSZGoTZeMHWODa_r1HtVnVQ&oe=68362699">
+  <link rel="icon" type="image/png" href="495563656_122107947614855440_1152109947886773901_n.jpg">
   <style>
     /* General Reset */
     * {
@@ -600,67 +600,192 @@
   </nav>
   <div class="container">
     <header>
-      <img src="https://scontent.fdac174-1.fna.fbcdn.net/v/t39.30808-1/495563656_122107947614855440_1152109947886773901_n.jpg?stp=c0.0.1542.1542a_dst-jpg_s200x200_tt6&_nc_cat=106&ccb=1-7&_nc_sid=1d2534&_nc_ohc=WtWtybPZakUQ7kNvwGBnJoZ&_nc_oc=AdlIYeEtPzhfNeagdQjQeiykN-bRY8OiAt8oP4KbCXgyHTab1huDU2X-ac7ELrwNggY&_nc_zt=24&_nc_ht=scontent.fdac174-1.fna&_nc_gid=B7NcTN_MHfB0L8OdQy-kmQ&oh=00_AfJr644RufJUjtV6kl2m7xFfJguE6Gitxu1Voc_I5_Z6wQ&oe=68362699" alt="Logo" style="height: 45px; vertical-align: middle;">
+      <img src="495563656_122107947614855440_1152109947886773901_n.jpg" alt="Logo" style="height: 45px; vertical-align: middle;">
       My Portfolio
     </header>
     <section id="home" aria-labelledby="home-heading" style="position: relative; background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%); box-shadow: 0 8px 24px rgba(0,0,0,0.08); border-radius: 18px; margin-bottom: 32px; padding: 2.5em 2em 2em 2em; text-align: center;">
-      <h1 id="home-heading" style="font-size: 2.5em; color: #007BFF; margin-bottom: 0.3em; letter-spacing: 1px; text-shadow: 1px 2px 8px #b3c6e7;">Welcome</h1>
-      <p style="font-size: 1.3em; color: #333; margin-bottom: 1.5em; font-weight: 500;">
-      Welcome to my portfolio! <span style="color: #887734; font-weight: bold;">I'm a Web Developer</span>, passionate about <span style="color: #007BFF; font-weight: bold;">Web Design</span>
+      <h1 id="home-heading" class="fade-in-title" style="font-size: 2.5em; color: #007BFF; margin-bottom: 0.3em; letter-spacing: 1px; text-shadow: 1px 2px 8px #b3c6e7;">Welcome</h1>
+      <p class="slide-in-text" style="font-size: 1.3em; color: #0cb335; margin-bottom: 1.5em; font-weight: 500;">
+      Welcome to my portfolio! <span style="color: #801855; font-weight: bold;">I'm a Web Developer</span>, passionate about <span style="color: #007BFF; font-weight: bold;">Web Design</span>
       </p>
+      <div class="color-animate-bar"></div>
+      <style>
+        .fade-in-title {
+          opacity: 0;
+          animation: fadeInTitle 1.2s ease-out forwards;
+        }
+        @keyframes fadeInTitle {
+          from { opacity: 0; transform: translateY(-30px);}
+          to { opacity: 1; transform: translateY(0);}
+        }
+        .slide-in-text {
+          opacity: 0;
+          animation: slideInText 1.2s 0.5s ease-out forwards;
+        }
+        @keyframes slideInText {
+          from { opacity: 0; transform: translateX(-40px);}
+          to { opacity: 1; transform: translateX(0);}
+        }
+        .color-animate-bar {
+          width: 100%;
+          height: 8px;
+          border-radius: 6px;
+          margin: 1.2em auto 1.5em auto;
+          background: linear-gradient(270deg, #007BFF, #ffcc00, #0cb335, #801855, #007BFF);
+          background-size: 800% 800%;
+          animation: colorBarMove 4s ease-in-out infinite;
+          box-shadow: 0 2px 12px rgba(0,123,255,0.12);
+        }
+        @keyframes colorBarMove {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+      </style>
       <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 1.5em;">
-      <img src="https://scontent.fdac174-1.fna.fbcdn.net/v/t39.30808-1/495563656_122107947614855440_1152109947886773901_n.jpg?stp=c0.0.1542.1542a_dst-jpg_s200x200_tt6&_nc_cat=106&ccb=1-7&_nc_sid=1d2534&_nc_ohc=WtWtybPZakUQ7kNvwGBnJoZ&_nc_oc=AdlIYeEtPzhfNeagdQjQeiykN-bRY8OiAt8oP4KbCXgyHTab1huDU2X-ac7ELrwNggY&_nc_zt=24&_nc_ht=scontent.fdac174-1.fna&_nc_gid=MatXf4CwforrLEfbKSYHeA&oh=00_AfKV_D7Y6E1Q6L1ikt0kP09aSZGoTZeMHWODa_r1HtVnVQ&oe=68362699"
-        alt="Profile" style="width: 120px; height: 120px; border-radius: 50%; box-shadow: 0 4px 16px rgba(0,123,255,0.15); border: 4px solid #fff; object-fit: cover;">
+        <img src="495563656_122107947614855440_1152109947886773901_n.jpg"
+          alt="Profile"
+          class="profile-animate"
+          style="width: 120px; height: 120px; border-radius: 100%; box-shadow: 0 4px 16px rgba(0,123,255,0.15); border: 4px solid #ffffff; object-fit: cover;">
       </div>
-      <a href="#contact" class="button" style="margin-top: 1em;">Contact Me</a>
+      <style>
+        .profile-animate {
+          opacity: 0;
+          transform: scale(0.8) rotate(-10deg);
+          animation: profileFadeIn 1.2s 0.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+        }
+        @keyframes profileFadeIn {
+          0% {
+        opacity: 0;
+        transform: scale(0.8) rotate(-10deg);
+          }
+          60% {
+        opacity: 1;
+        transform: scale(1.05) rotate(3deg);
+          }
+          80% {
+        transform: scale(0.97) rotate(-2deg);
+          }
+          100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+          }
+        }
+      </style>
+      <a href="#contact" class="button color-animate-btn" style="margin-top: 1em;">Contact Me</a>
+      <style>
+        .color-animate-btn {
+          background: linear-gradient(270deg, #007BFF, #ffcc00, #0cb335, #801855, #007BFF);
+          background-size: 800% 800%;
+          animation: colorBtnMove 4s ease-in-out infinite;
+          border: none;
+        }
+        @keyframes colorBtnMove {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+      </style>
     </section>
     <section id="projects" aria-labelledby="projects-heading">
       <h1 id="projects-heading">Projects</h1>
-      <div class="image" style="background-image: url('https://scontent.fdac174-1.fna.fbcdn.net/v/t39.30808-6/499036506_122094199802890978_6597843495876626008_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=f9ZeBAxGucMQ7kNvwE7_kVY&_nc_oc=AdmH9IUYh6ME2gltY_KtiSgdohmL6khDwP10dJ0qmrJbUhRy8wbK_hhYh7kaLn6Kmn0&_nc_zt=23&_nc_ht=scontent.fdac174-1.fna&_nc_gid=2wN2cwKbdMsNSZuKsumHjg&oh=00_AfIjpqlQCg-wqpF6N2eGCQLDrJQN-Gc2JR0-zISkl2wBdw&oe=68334408');"></div>
+      <div class="image" style="background-image: url('499036506_122094199802890978_6597843495876626008_n.jpg');"></div>
       <div class="portfolio">
         <div class="card interactive" tabindex="0">
-          <img src="https://scontent.fdac174-1.fna.fbcdn.net/v/t39.30808-1/497978532_122094134414890978_594080930050006909_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=104&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=3DExAi0hsKQQ7kNvwGIPd1m&_nc_oc=AdnvdDjSKqQ4yMUzI4AAiovlk-PdDLnQSyJaHcosPl_iI7OKgoYJp5thePrSACbTCNo&_nc_zt=24&_nc_ht=scontent.fdac174-1.fna&_nc_gid=WB75ikoNgk-ZUEGtm4JktA&oh=00_AfIFASKs06_lwvzd_054jer-9jXIuEjtn0L8wZjd5yzVRQ&oe=68349457" alt="Project 1" style="width:20%; border-radius:10px; margin-bottom:10px;">
-          <h2>Project 1</h2>
-          <p>Website Design</p>
+          <div class="project-img-wrap">
+            <img src="508721776_122119239332855440_3511401177764521189_n.jpg" alt="Project 1" class="project-img">
+            <h2>Project 1</h2>
+            <p>Website Design</p>
+          </div>
         </div>
         <div class="card interactive" tabindex="0">
-          <img src="https://scontent.fdac174-1.fna.fbcdn.net/v/t39.30808-6/499916780_122095304786890978_6561933449425652960_n.webp?stp=dst-jpg_tt6&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=FgdPCUyHwpgQ7kNvwGpq7bt&_nc_oc=AdleVN2ZBlK9bDJ_pWbkRh8o8ZFK8aGMqgvkrV0xJ6YeT48ifqd3EBHv-0xAazLQMzQ&_nc_zt=23&_nc_ht=scontent.fdac174-1.fna&_nc_gid=qmZdkgPuHZ-lEvSMgNfgyQ&oh=00_AfKEKRX-tmk3qiY1jIlAR4M-T_UyfOZ57J1mff4WgwVKRA&oe=68347B4E" alt="Project 2" style="width:25%; border-radius:10px; margin-bottom:10px;">
-          <h2>Project 2</h2>
-          <p>Cyber-Security</p>
+          <div class="project-img-wrap">
+            <img src="hacker-logo-or-hacker-in-black-hoodie-cyber-crime-with-laptop-free-png (1).webp" alt="Project 2" class="project-img">
+            <h2>Project 2</h2>
+            <p>Cyber-Security</p>
+          </div>
         </div>
         <div class="card interactive" tabindex="0">
-          <img src="https://scontent.fdac174-1.fna.fbcdn.net/v/t39.30808-6/498386944_122095306550890978_8439212493866377379_n.webp?stp=dst-jpg_tt6&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=S3WuE_FHuUIQ7kNvwGEBi8O&_nc_oc=AdlOlbkTQx33TcHn--B5ujU7JYqYoBThOII58rtofUmoA7bv5Y_bLIlQg7ygjWPb_s4&_nc_zt=23&_nc_ht=scontent.fdac174-1.fna&_nc_gid=wxpv2Oqf_WULLoWO7ZBqng&oh=00_AfIE7LbCd1VBS63LSbfgp0m-R0Q98i6IC0zB_4VzjtIRkw&oe=68348DC5" alt="Project 3" style="width:25%; border-radius:10px; margin-bottom:10px;">
-          <h2>Project 3</h2>
-          <p>Business Portfolio</p>
+          <div class="project-img-wrap">
+            <img src="project-task-management-and-effective-time-planning-tools-project-development-icon-3d-vector-illustration-png.webp" alt="Project 3" class="project-img">
+            <h2>Project 3</h2>
+            <p>Business Portfolio</p>
+          </div>
         </div>
         <div class="card interactive" tabindex="0">
-          <img src="https://scontent.fdac174-1.fna.fbcdn.net/v/t39.30808-6/498314568_122095333886890978_27573746732962184_n.webp?stp=dst-jpg_tt6&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=nuIcpjGMsHwQ7kNvwFLHgZx&_nc_oc=AdlwxYaXX2nc9_eFiKk2Sz2f7e2i1X8StUMsYrnPzkfBdKpd9Pl9kb5xiZidxoIMp7Y&_nc_zt=23&_nc_ht=scontent.fdac174-1.fna&_nc_gid=1UJoj8VhDl40NDhuCJU-5w&oh=00_AfIfljeGgLq71WyuUNLKoqh4Y9jhBQ7ylqnZLJF_E5XAFQ&oe=68347739" alt="Project 4" style="width:25%; border-radius:10px; margin-bottom:10px;">
-          <h2>Project 4</h2>
-          <p>Developer-portfolio</p>
+          <div class="project-img-wrap">
+            <img src="495563656_122107947614855440_1152109947886773901_n.jpg" alt="Project 4" class="project-img">
+            <h2>Project 4</h2>
+            <p>Developer-portfolio</p>
+          </div>
         </div>
         <div class="card interactive" tabindex="0">
-          <img src="https://scontent.fdac174-1.fna.fbcdn.net/v/t39.30808-6/491929525_122095341314890978_9053690679084921788_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=MQFqodgTKI4Q7kNvwFjNNaS&_nc_oc=Adn7lYKjO0IlMjnKK0gWYMbpN0uD6GsdtLaHznTKScxTgPfco_rARilU7WprApWeOyI&_nc_zt=23&_nc_ht=scontent.fdac174-1.fna&_nc_gid=11_R5AFF1hhTKXV4f6jMsg&oh=00_AfLFQqoIF9djkwACCD_Adhu4ruH9iaBiWrLq_TLSbTJ8DQ&oe=68349562" alt="Project 5" style="width:20%; border-radius:10px; margin-bottom:10px;">
-          <h2>Project 5</h2>
-          <p>my-traditional-website</p>
+          <div class="project-img-wrap">
+            <img src="vip-icon-for-graphic-design-logo-website-social-media-mobile-app-ui-png.webp" alt="Project 5" class="project-img">
+            <h2>Project 5</h2>
+            <p>my-traditional-website</p>
+          </div>
         </div>
         <div class="card interactive" tabindex="0">
-          <img src="https://scontent.fdac174-1.fna.fbcdn.net/v/t39.30808-1/495563656_122107947614855440_1152109947886773901_n.jpg?stp=c0.0.1542.1542a_dst-jpg_s200x200_tt6&_nc_cat=106&ccb=1-7&_nc_sid=1d2534&_nc_ohc=WtWtybPZakUQ7kNvwGBnJoZ&_nc_oc=AdlIYeEtPzhfNeagdQjQeiykN-bRY8OiAt8oP4KbCXgyHTab1huDU2X-ac7ELrwNggY&_nc_zt=24&_nc_ht=scontent.fdac174-1.fna&_nc_gid=B7NcTN_MHfB0L8OdQy-kmQ&oh=00_AfJr644RufJUjtV6kl2m7xFfJguE6Gitxu1Voc_I5_Z6wQ&oe=68362699" alt="Project 6" style="width:20%; border-radius:10px; margin-bottom:10px;">
-          <h2>Project 6</h2>
-          <p>My portfolio</p>
+          <div class="project-img-wrap">
+            <img src="495563656_122107947614855440_1152109947886773901_n.jpg" alt="Project 6" class="project-img">
+            <h2>Project 6</h2>
+            <p>Resume portfolio</p>
+          </div>
         </div>
         <div class="card interactive" tabindex="0">
-          <img src="https://scontent.fdac174-1.fna.fbcdn.net/v/t39.30808-6/499925852_122097639218890978_8550758550378172993_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=8RhKp_EjiOUQ7kNvwEHdI5C&_nc_oc=Adl4hlHMvewebuKR5Do7kHB7S_7CSK7-5O_rKQOcTqYYsy-Owjh8OzWSJpKEEzk0jds&_nc_zt=23&_nc_ht=scontent.fdac174-1.fna&_nc_gid=RQ_HH_nBMV1FyFKvLKF_5w&oh=00_AfLtLhxPVRsqAvZDwZkLLQ36bUTCheR_k62xYyFTEsvRXw&oe=6838D603" alt="Project 7" style="width:20%; border-radius:10px; margin-bottom:10px;">
-          <h2>Project 7</h2>
-          <p>Web Developer</p>
+          <div class="project-img-wrap">
+            <img src="vecteezy_icon-free-logo-javascript_53066817.png" alt="Project 7" class="project-img">
+            <h2>Project 7</h2>
+            <p>Web Developer</p>
+          </div>
         </div>
       </div>
+      <style>
+        .project-img-wrap {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          width: 100%;
+          text-align: center;
+        }
+        .project-img {
+          width: 100%;
+          max-width: 120px;
+          height: auto;
+          border-radius: 10px;
+          margin-bottom: 10px;
+          display: block;
+          object-fit: cover;
+        }
+        @media (max-width: 768px) {
+          .project-img {
+            max-width: 90px;
+          }
+        }
+        @media (max-width: 480px) {
+          .project-img {
+            max-width: 70px;
+          }
+          .portfolio {
+            flex-direction: column;
+            align-items: center;
+          }
+          .card {
+            width: 100%;
+            max-width: 100%;
+          }
+        }
+      </style>
     </section>
     <section id="about">
       <h1 style="color:#007BFF; text-align:center; margin-bottom:0.7em; letter-spacing:1px; text-shadow:1px 2px 8px #b3c6e7;">About</h1>
-      <p style="font-size:1.2em; color:#333; text-align:center; margin-bottom:0.5em; font-weight:500;">
-        I'm <span style="color:#ffcc00; font-weight:bold;">Jahid</span>, a <span style="color:#007BFF; font-weight:bold;">20-year-old Web Developer</span> with <span class="highlight" style="background:#e0eafc; color:#007BFF; padding:0.2em 0.5em; border-radius:5px;">1 year</span> of experience.
+      <p style="font-size:1.2em; color:#000000; text-align:center; margin-bottom:0.5em; font-weight:500;">
+        I'm <span style="color:#ffcc00; font-weight:bold;">Jahid</span>, a <span style="color:#007BFF; font-weight:bold;">20-year-old Web Developer</span> with <span class="highlight" style="background:#e7ebf3; color:#007BFF; padding:0.2em 0.5em; border-radius:5px;">1 year</span> of experience.
       </p>
-      <p style="font-size:1.1em; color:#555; text-align:center; margin-bottom:1.2em;">
+      <p style="font-size:1.1em; color:#000000; text-align:center; margin-bottom:1.2em;">
         My skills include 
         <span style="color:#e44d26; font-weight:bold;">HTML</span>, 
         <span style="color:#264de4; font-weight:bold;">CSS</span>, 
@@ -673,17 +798,17 @@
         <img src="https://img.icons8.com/color/48/000000/javascript--v1.png" alt="JavaScript" title="JavaScript" style="width:38px; height:38px;">
         <img src="https://img.icons8.com/color/48/000000/python--v1.png" alt="Python" title="Python" style="width:38px; height:38px;">
       </div>
-      <p style="font-size:1em; color:#444; text-align:center;">
+      <p style="font-size:1em; color:#000000; text-align:center;">
         I love building <span style="color:#007BFF; font-weight:bold;">modern</span> and <span style="color:#ffcc00; font-weight:bold;">responsive</span> websites that make an impact.
       </p>
-      <div class="image" style="background-image: url('https://scontent.fdac174-1.fna.fbcdn.net/v/t39.30808-6/496124318_122109180818855440_45267022754689058_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=108&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=_x4wjaUuQuUQ7kNvwEoraCN&_nc_oc=Adn140b_Nwg_varzBm-8NFakJ4IZB1bzUgpvEa8KTpXAftPOsfF6W74jnTRy5WhNCB8&_nc_zt=23&_nc_ht=scontent.fdac174-1.fna&_nc_gid=MatXf4CwforrLEfbKSYHeA&oh=00_AfL47PyL3lsLo2HPg97uB1OuREU5gvqiFetmkI_EP3R9Cw&oe=68363EFC');"></div>
+      <div class="image" style="background-image: url('image/banar.jpg');"></div>
     </section>
     <section id="contact" aria-labelledby="contact-heading" class="content">
       <div class="contact" style="background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%); border-radius: 16px; box-shadow: 0 6px 24px rgba(0,123,255,0.10); padding: 2em 1.5em; margin-bottom: 2em;">
         <h2 id="contact-heading" style="font-size:2em; color:#007BFF; margin-bottom:1em; letter-spacing:1px; text-shadow:1px 2px 8px #b3c6e7;">Contact Me</h2>
         <div class="social-links" style="gap: 30px; margin-bottom: 2em; flex-wrap: wrap;">
             <a href="https://instagram.com/jahidhasan2.0ff" target="_blank"
-             style="box-shadow: 0 4px 16px rgba(225,48,108,0.18); border: 2.5px solid #e1306c; background: linear-gradient(135deg, #fdf6f9 0%, #fbeff5 100%); transition: box-shadow 0.3s, border 0.3s, transform 0.3s; border-radius: 50%; display: flex; align-items: center; justify-content: center; width: 54px; height: 54px;">
+             style="box-shadow: 0 4px 16px rgba(225,48,108,0.18); border: 2.5px solid #e1306c; background: linear-gradient(135deg, #e0c0ce 0%, #fbeff5 100%); transition: box-shadow 0.3s, border 0.3s, transform 0.3s; border-radius: 50%; display: flex; align-items: center; justify-content: center; width: 54px; height: 54px;">
             <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png" alt="Instagram"
                style="border-radius: 50%; transition: transform 0.3s, box-shadow 0.3s; width: 38px; height: 38px; box-shadow: 0 2px 8px rgba(225,48,108,0.10);">
             </a>
@@ -747,52 +872,120 @@
       </style>
     </section>
     </section>
-    <section id="expertise" style="margin-top: 2em;">
+    <section id="expertise" style="margin-top: 1.2em;">
       <h1 style="text-align:center; color:#007BFF; margin-bottom:1em;">Expertise</h1>
-      <div class="section" style="background:#f5faff; border-radius:10px; box-shadow:0 2px 8px rgba(0,123,255,0.07); padding:1.5em; margin-bottom:1.5em;">
-      <h2 style="color:#0056b3;">AI: Development and Integration</h2>
-      <p>We specialize in developing and integrating AI solutions for businesses, including machine learning, natural language processing, and computer vision.</p>
-      <ul>
-        <li>Machine learning model development</li>
-        <li>Natural language processing</li>
-        <li>Computer vision</li>
-      </ul>
-      </div>
-      <div class="section" style="background:#f5faff; border-radius:10px; box-shadow:0 2px 8px rgba(0,123,255,0.07); padding:1.5em; margin-bottom:1.5em;">
-      <h2 style="color:#0056b3;">Web: Design and Development</h2>
-      <p>We design and develop custom websites and web applications, including e-commerce sites, blogs, and portfolios.</p>
-      <ul>
-        <li>Custom website design</li>
-        <li>Web application development</li>
-        <li>E-commerce solutions</li>
-      </ul>
-      </div>
-      <div class="section" style="background:#f5faff; border-radius:10px; box-shadow:0 2px 8px rgba(0,123,255,0.07); padding:1.5em; margin-bottom:1.5em;">
-      <h2 style="color:#0056b3;">Cybersecurity: Protection and Consulting</h2>
-      <p>We provide cybersecurity protection and consulting services, including penetration testing, vulnerability assessments, and incident response.</p>
-      <ul>
-        <li>Penetration testing</li>
-        <li>Vulnerability assessments</li>
-        <li>Incident response</li>
-      </ul>
-      </div>
-      <div class="section" style="background:#f5faff; border-radius:10px; box-shadow:0 2px 8px rgba(0,123,255,0.07); padding:1.5em; margin-bottom:1.5em;">
-      <h2 style="color:#0056b3;">Data: Analysis and Visualization</h2>
-      <p>We analyze and visualize data to help businesses make informed decisions, including data mining, predictive analytics, and data visualization.</p>
-      <ul>
-        <li>Data mining</li>
-        <li>Predictive analytics</li>
-        <li>Data visualization</li>
-      </ul>
-      </div>
-      <div class="section" style="background:#f5faff; border-radius:10px; box-shadow:0 2px 8px rgba(0,123,255,0.07); padding:1.5em;">
-      <h2 style="color:#0056b3;">Cloud: Migration and Management</h2>
-      <p>We help businesses migrate to the cloud and manage their cloud infrastructure, including cloud security, cloud storage, and cloud computing.</p>
-      <ul>
-        <li>Cloud migration</li>
-        <li>Cloud security</li>
-        <li>Cloud storage</li>
-      </ul>
+      <div class="portfolio" style="flex-wrap: wrap; gap: 20px;">
+        <div class="card section" style="background:#f5faff;">
+            <h2 style="color:#0056b3; text-shadow:1px 2px 8px #b3c6e7; letter-spacing:1px; margin-bottom:0.5em;">AI: Development and Integration</h2>
+            <p style="font-size:1.08em; color:#333; margin-bottom:1em; background:linear-gradient(90deg,#e0eafc 60%,#f5faff 100%); padding:0.7em 1em; border-radius:8px; box-shadow:0 2px 8px rgba(0,123,255,0.07);">
+            We specialize in developing and integrating <span style="color:#007BFF; font-weight:bold;">AI solutions</span> for businesses, including machine learning, natural language processing, and computer vision.
+            </p>
+            <ul style="padding-left:18px; margin-bottom:0.5em;">
+            <li style="margin-bottom:0.5em; color:#007BFF; font-weight:500; background:#e0eafc; border-radius:5px; padding:0.3em 0.7em;">
+              <span style="color:#222;">Machine learning model development</span>
+            </li>
+            <li style="margin-bottom:0.5em; color:#801855; font-weight:500; background:#fbeff5; border-radius:5px; padding:0.3em 0.7em;">
+              <span style="color:#222;">Natural language processing</span>
+            </li>
+            <li style="color:#0cb335; font-weight:500; background:#eafcf3; border-radius:5px; padding:0.3em 0.7em;">
+              <span style="color:#222;">Computer vision</span>
+            </li>
+            </ul>
+            <div style="display:flex; gap:10px; margin-top:1em;">
+            <img src="png-transparent-ai-brain-configuration-ai-brain-setting-ai-brain-ai-mind-artificial-intelligence-brain-artificial-brain-3d-icon-thumbnail.png" alt="AI" title="AI" style="width:32px; height:32px;">
+            <img src="png-transparent-brainstorming-creativity-brain-orange-people-hand-drawn-thumbnail.png" alt="Machine Learning" title="Machine Learning" style="width:32px; height:32px;">
+            <img src="png-transparent-human-brain-psychology-mind-psychologist-brain-relaxing-s-art-scalable-vector-graphics-reality-thumbnail.png" alt="NLP" title="Natural Language Processing" style="width:32px; height:32px;">
+            <img src="png-transparent-lateralization-of-brain-function-human-brain-brain-text-people-logo-thumbnail.png" alt="Computer Vision" title="Computer Vision" style="width:32px; height:32px;">
+            </div>
+        </div>
+        <div class="card section" style="background:linear-gradient(120deg,#f5faff 60%,#e0eafc 100%); border: 1.5px solid #cce0ff; box-shadow: 0 6px 18px rgba(0,123,255,0.08); border-radius: 18px; padding: 2em 1.5em; transition: box-shadow 0.3s, transform 0.3s;">
+          <h2 style="color:#0056b3; text-shadow:1px 2px 8px #b3c6e7; letter-spacing:1px; margin-bottom:0.5em;">Web: Design and Development</h2>
+          <p style="font-size:1.08em; color:#333; margin-bottom:1em; background:linear-gradient(90deg,#e0eafc 60%,#f5faff 100%); padding:0.7em 1em; border-radius:8px; box-shadow:0 2px 8px rgba(0,123,255,0.07);">
+            We design and develop <span style="color:#007BFF; font-weight:bold;">custom websites</span> and <span style="color:#801855; font-weight:bold;">web applications</span>, including e-commerce sites, blogs, and portfolios.
+          </p>
+          <ul style="padding-left:18px; margin-bottom:0.5em;">
+            <li style="margin-bottom:0.5em; color:#007BFF; font-weight:500; background:#e0eafc; border-radius:5px; padding:0.3em 0.7em;">
+              <span style="color:#222;">Custom website design</span>
+            </li>
+            <li style="margin-bottom:0.5em; color:#801855; font-weight:500; background:#fbeff5; border-radius:5px; padding:0.3em 0.7em;">
+              <span style="color:#222;">Web application development</span>
+            </li>
+            <li style="color:#0cb335; font-weight:500; background:#eafcf3; border-radius:5px; padding:0.3em 0.7em;">
+              <span style="color:#222;">E-commerce solutions</span>
+            </li>
+          </ul>
+          <div style="display:flex; gap:10px; margin-top:1em;">
+            <img src="web-design.png" alt="Web Design" title="Web Design" style="width:32px; height:32px;">
+            <img src="source-code.png" alt="Web Development" title="Web Development" style="width:32px; height:32px;">
+            <img src="shopping-cart.png" alt="E-commerce" title="E-commerce" style="width:32px; height:32px;">
+          </div>
+        </div>
+        <div class="card section" style="background: linear-gradient(120deg, #f5faff 60%, #e0eafc 100%); border: 1.5px solid #cce0ff; box-shadow: 0 6px 18px rgba(0,123,255,0.08); border-radius: 18px; padding: 2em 1.5em; transition: box-shadow 0.3s, transform 0.3s;">
+          <h2 style="color:#0056b3; text-shadow:1px 2px 8px #b3c6e7; letter-spacing:1px; margin-bottom:0.5em;">Cybersecurity: Protection and Consulting</h2>
+          <p style="font-size:1.08em; color:#333; margin-bottom:1em; background:linear-gradient(90deg,#e0eafc 60%,#f5faff 100%); padding:0.7em 1em; border-radius:8px; box-shadow:0 2px 8px rgba(0,123,255,0.07);">
+            We provide <span style="color:#007BFF; font-weight:bold;">cybersecurity protection</span> and <span style="color:#801855; font-weight:bold;">consulting services</span>, including penetration testing, vulnerability assessments, and incident response.
+          </p>
+          <ul style="padding-left:18px; margin-bottom:0.5em;">
+            <li style="margin-bottom:0.5em; color:#007BFF; font-weight:500; background:#e0eafc; border-radius:5px; padding:0.3em 0.7em;">
+              <span style="color:#222;">Penetration testing</span>
+            </li>
+            <li style="margin-bottom:0.5em; color:#801855; font-weight:500; background:#fbeff5; border-radius:5px; padding:0.3em 0.7em;">
+              <span style="color:#222;">Vulnerability assessments</span>
+            </li>
+            <li style="color:#0cb335; font-weight:500; background:#eafcf3; border-radius:5px; padding:0.3em 0.7em;">
+              <span style="color:#222;">Incident response</span>
+            </li>
+          </ul>
+          <div style="display:flex; gap:10px; margin-top:1em;">
+            <img src="hacker-logo-or-hacker-in-black-hoodie-cyber-crime-with-laptop-free-png (1).webp" alt="Penetration Testing" title="Penetration Testing" style="width:32px; height:32px;">
+            <img src="png-transparent-risk-assessment-risk-management-plan-others-saving-text-plan-thumbnail.png" alt="Vulnerability Assessment" title="Vulnerability Assessment" style="width:32px; height:32px;">
+            <img src="png-transparent-risk-management-risk-register-risk-assessment-management-philosophy-angle-company-text-thumbnail.png" alt="Incident Response" title="Incident Response" style="width:32px; height:32px;">
+          </div>
+        </div>
+        <div class="card section" style="background: linear-gradient(120deg, #f5faff 60%, #e0eafc 100%); border: 1.5px solid #cce0ff; box-shadow: 0 6px 18px rgba(0,123,255,0.08); border-radius: 18px; padding: 2em 1.5em; transition: box-shadow 0.3s, transform 0.3s;">
+          <h2 style="color:#0056b3; text-shadow:1px 2px 8px #b3c6e7; letter-spacing:1px; margin-bottom:0.5em;">Data: Analysis and Visualization</h2>
+          <p style="font-size:1.08em; color:#333; margin-bottom:1em; background:linear-gradient(90deg,#e0eafc 60%,#f5faff 100%); padding:0.7em 1em; border-radius:8px; box-shadow:0 2px 8px rgba(0,123,255,0.07);">
+            We analyze and visualize data to help businesses make informed decisions, including data mining, predictive analytics, and data visualization.
+          </p>
+          <ul style="padding-left:18px; margin-bottom:0.5em;">
+            <li style="margin-bottom:0.5em; color:#007BFF; font-weight:500; background:#e0eafc; border-radius:5px; padding:0.3em 0.7em;">
+              <span style="color:#222;">Data mining</span>
+            </li>
+            <li style="margin-bottom:0.5em; color:#801855; font-weight:500; background:#fbeff5; border-radius:5px; padding:0.3em 0.7em;">
+              <span style="color:#222;">Predictive analytics</span>
+            </li>
+            <li style="color:#0cb335; font-weight:500; background:#eafcf3; border-radius:5px; padding:0.3em 0.7em;">
+              <span style="color:#222;">Data visualization</span>
+            </li>
+          </ul>
+          <div style="display:flex; gap:10px; margin-top:1em;">
+            <img src="combo-chart--v1.png" alt="Data Mining" title="Data Mining" style="width:32px; height:32px;">
+            <img src="artificial-intelligence.png" alt="Predictive Analytics" title="Predictive Analytics" style="width:32px; height:32px;">
+            <img src="png-transparent-computer-icons-big-data-database-data-base-angle-rectangle-black-thumbnail.png" alt="Data Visualization" title="Data Visualization" style="width:32px; height:32px;">
+          </div>
+        </div>
+        <div class="card section" style="background: linear-gradient(120deg, #f5faff 60%, #e0eafc 100%); border: 1.5px solid #cce0ff; box-shadow: 0 6px 18px rgba(0,123,255,0.08); border-radius: 18px; padding: 2em 1.5em; transition: box-shadow 0.3s, transform 0.3s;">
+          <h2 style="color:#0056b3; text-shadow:1px 2px 8px #b3c6e7; letter-spacing:1px; margin-bottom:0.5em;">Cloud: Migration and Management</h2>
+          <p style="font-size:1.08em; color:#333; margin-bottom:1em; background:linear-gradient(90deg,#e0eafc 60%,#f5faff 100%); padding:0.7em 1em; border-radius:8px; box-shadow:0 2px 8px rgba(0,123,255,0.07);">
+            We help businesses migrate to the cloud and manage their cloud infrastructure, including cloud security, cloud storage, and cloud computing.
+          </p>
+          <ul style="padding-left:18px; margin-bottom:0.5em;">
+            <li style="margin-bottom:0.5em; color:#007BFF; font-weight:500; background:#e0eafc; border-radius:5px; padding:0.3em 0.7em;">
+              <span style="color:#222;">Cloud migration</span>
+            </li>
+            <li style="margin-bottom:0.5em; color:#801855; font-weight:500; background:#fbeff5; border-radius:5px; padding:0.3em 0.7em;">
+              <span style="color:#222;">Cloud security</span>
+            </li>
+            <li style="color:#0cb335; font-weight:500; background:#eafcf3; border-radius:5px; padding:0.3em 0.7em;">
+              <span style="color:#222;">Cloud storage</span>
+            </li>
+          </ul>
+          <div style="display:flex; gap:10px; margin-top:1em;">
+            <img src="png-transparent-computer-icons-data-security-data-migration-cloud-secure-text-logo-data-thumbnail.png" alt="Cloud Migration" title="Cloud Migration" style="width:32px; height:32px;">
+            <img src="png-transparent-cloud-computing-security-computer-security-cloud-storage-information-technology-cloud-computing-computer-network-cloud-computer-thumbnail.png" alt="Cloud Security" title="Cloud Security" style="width:32px; height:32px;">
+            <img src="cloud-storage.png" alt="Cloud Storage" title="Cloud Storage" style="width:32px; height:32px;">
+          </div>
+        </div>
       </div>
     </section>
     </div>
@@ -855,7 +1048,7 @@
   });
 
   document.querySelector('.card:nth-child(6)').addEventListener('click', () => {
-    window.open('#', '_blank'); // Replace with the desired URL for Project 6
+    window.open('https://jahidads.github.io/Resume-Portfolio/', '_blank'); // Replace with the desired URL for Project 6
   });
 
   document.querySelector('.card:nth-child(7)').addEventListener('click', () => {
